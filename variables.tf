@@ -44,238 +44,238 @@ variable "private_link_private_dns_zones" {
   }))
   default = {
     azure_container_apps = {
-      zone_name = "privatelink.{regionName}.azurecontainerapps.io"
+      zone_name = "privatelink.{regionName}.azurecontainerapps.io"                                   #check this
     }
     azure_ml = {
-      zone_name = "privatelink.api.azureml.ms"
+      zone_name = "privatelink.api.ml.azure.us"
     }
     azure_ml_notebooks = {
-      zone_name = "privatelink.notebooks.azure.net"
+      zone_name = "privatelink.notebooks.usgovcloudapi.net"
     }
     azure_ai_cog_svcs = {
-      zone_name = "privatelink.cognitiveservices.azure.com"
+      zone_name = "privatelink.cognitiveservices.azure.us"
     }
     azure_ai_oai = {
-      zone_name = "privatelink.openai.azure.com"
+      zone_name = "privatelink.openai.azure.com"                                                       #check this
     }
     azure_bot_svc_bot = {
-      zone_name = "privatelink.directline.botframework.com"
+      zone_name = "privatelink.directline.botframework.com"                                            #check this
     }
     azure_bot_svc_token = {
-      zone_name = "privatelink.token.botframework.com"
+      zone_name = "privatelink.token.botframework.com"                                                  #check this
     }
     azure_service_hub = {
-      zone_name = "privatelink.servicebus.windows.net"
+      zone_name = "privatelink.servicebus.usgovcloudapi.net"
     }
     azure_data_factory = {
-      zone_name = "privatelink.datafactory.azure.net"
+      zone_name = "privatelink.datafactory.azure.us"
     }
     azure_data_factory_portal = {
-      zone_name = "privatelink.adf.azure.com"
+      zone_name = "privatelink.adf.azure.us"
     }
     azure_hdinsight = {
-      zone_name = "privatelink.azurehdinsight.net"
+      zone_name = "privatelink.azurehdinsight.us"
     }
     azure_data_explorer = {
-      zone_name = "privatelink.{regionName}.kusto.windows.net"
+      zone_name = "privatelink.{regionName}.kusto.windows.net"                                 #check this
     }
     azure_storage_blob = {
-      zone_name = "privatelink.blob.core.windows.net"
+      zone_name = "privatelink.blob.core.windows.net"                           #check this
     }
     azure_storage_queue = {
-      zone_name = "privatelink.queue.core.windows.net"
+      zone_name = "privatelink.queue.core.windows.net"                           #check this
     }
     azure_storage_table = {
-      zone_name = "privatelink.table.core.windows.net"
+      zone_name = "privatelink.table.core.windows.net"                           #check this
     }
     azure_storage_file = {
-      zone_name = "privatelink.file.core.windows.net"
+      zone_name = "privatelink.file.core.usgovcloudapi.net"
     }
     azure_storage_web = {
-      zone_name = "privatelink.web.core.windows.net"
+      zone_name = "privatelink.web.core.usgovcloudapi.net"
     }
     azure_data_lake_gen2 = {
-      zone_name = "privatelink.dfs.core.windows.net"
+      zone_name = "privatelink.dfs.core.usgovcloudapi.net"
     }
     azure_file_sync = {
-      zone_name = "privatelink.afs.azure.net"
+      zone_name = "privatelink.afs.azure.net"                           #check this
     }
     azure_power_bi_tenant_analysis = {
-      zone_name = "privatelink.analysis.windows.net"
+      zone_name = "privatelink.analysis.windows.net"                           #check this
     }
     azure_power_bi_dedicated = {
-      zone_name = "privatelink.pbidedicated.windows.net"
+      zone_name = "privatelink.pbidedicated.windows.net"                           #check this
     }
     azure_power_bi_power_query = {
-      zone_name = "privatelink.tip1.powerquery.microsoft.com"
+      zone_name = "privatelink.tip1.powerquery.microsoft.com"                           #check this
     }
     azure_databricks_ui_api = {
-      zone_name = "privatelink.azuredatabricks.net"
+      zone_name = "privatelink.databricks.azure.us"
     }
     azure_batch = {
-      zone_name = "privatelink.batch.azure.com"
+      zone_name = "privatelink.batch.usgovcloudapi.net"
     }
     azure_avd_global = {
-      zone_name = "privatelink-global.wvd.microsoft.com"
+      zone_name = "privatelink-global.wvd.azure.us"
     }
     azure_avd_feed_mgmt = {
-      zone_name = "privatelink.wvd.microsoft.com"
+      zone_name = "privatelink.wvd.azure.us"
     }
     azure_aks_mgmt = {
-      zone_name = "privatelink.{regionName}.azmk8s.io"
+      zone_name = "privatelink.{regionName}.azmk8s.io"                          #check this
     }
     azure_acr_registry = {
-      zone_name = "privatelink.azurecr.io"
+      zone_name = "privatelink.azurecr.us"
     }
     azure_acr_data = {
-      zone_name = "{regionName}.data.privatelink.azurecr.io"
+      zone_name = "{regionName}.privatelink.azurecr.us"
     }
     azure_sql_server = {
-      zone_name = "privatelink.database.windows.net"
+      zone_name = "privatelink.database.usgovcloudapi.net"
     }
     azure_cosmos_db_sql = {
-      zone_name = "privatelink.documents.azure.com"
+      zone_name = "privatelink.documents.azure.us"
     }
     azure_cosmos_db_mongo = {
-      zone_name = "privatelink.mongo.cosmos.azure.com"
+      zone_name = "privatelink.mongo.cosmos.azure.us"
     }
     azure_cosmos_db_cassandra = {
-      zone_name = "privatelink.cassandra.cosmos.azure.com"
+      zone_name = "privatelink.cassandra.cosmos.azure.us"
     }
     azure_cosmos_db_gremlin = {
-      zone_name = "privatelink.gremlin.cosmos.azure.com"
+      zone_name = "privatelink.gremlin.cosmos.azure.us"
     }
     azure_cosmos_db_table = {
-      zone_name = "privatelink.table.cosmos.azure.com"
+      zone_name = "privatelink.table.cosmos.azure.us"
     }
     azure_cosmos_db_analytical = {
-      zone_name = "privatelink.analytics.cosmos.azure.com"
+      zone_name = "privatelink.analytics.cosmos.azure.com"                          #check this
     }
     azure_cosmos_db_postgres = {
-      zone_name = "privatelink.postgres.cosmos.azure.com"
+      zone_name = "privatelink.postgres.cosmos.azure.com"                          #check this
     }
     azure_maria_db_server = {
-      zone_name = "privatelink.mariadb.database.azure.com"
+      zone_name = "privatelink.mariadb.database.usgovcloudapi.net"
     }
     azure_postgres_sql_server = {
-      zone_name = "privatelink.postgres.database.azure.com"
+      zone_name = "	privatelink.postgres.database.usgovcloudapi.net"
     }
     azure_mysql_db_server = {
-      zone_name = "privatelink.mysql.database.azure.com"
+      zone_name = "privatelink.mysql.database.usgovcloudapi.net"
     }
     azure_redis_cache = {
-      zone_name = "privatelink.redis.cache.windows.net"
+      zone_name = "privatelink.redis.cache.usgovcloudapi.net"
     }
     azure_redis_enterprise = {
-      zone_name = "privatelink.redisenterprise.cache.azure.net"
+      zone_name = "privatelink.redisenterprise.cache.azure.net"                           #check this
     }
     azure_arc_hybrid_compute = {
-      zone_name = "privatelink.his.arc.azure.com"
+      zone_name = "privatelink.his.arc.azure.com"                              #check this
     }
     azure_arc_guest_configuration = {
-      zone_name = "privatelink.guestconfiguration.azure.com"
+      zone_name = "privatelink.guestconfiguration.azure.com"                              #check this
     }
     azure_arc_kubernetes = {
-      zone_name = "privatelink.dp.kubernetesconfiguration.azure.com"
+      zone_name = "privatelink.dp.kubernetesconfiguration.azure.com"                              #check this
     }
     azure_event_grid = {
-      zone_name = "privatelink.eventgrid.azure.net"
+      zone_name = "privatelink.eventgrid.azure.us"
     }
     azure_api_management = {
-      zone_name = "privatelink.azure-api.net"
+      zone_name = "privatelink.azure-api.net"                              #check this
     }
     azure_healthcare_workspaces = {
-      zone_name = "privatelink.workspace.azurehealthcareapis.com"
+      zone_name = "privatelink.workspace.azurehealthcareapis.us"
     }
     azure_healthcare_fhir = {
-      zone_name = "privatelink.fhir.azurehealthcareapis.com"
+      zone_name = "privatelink.fhir.azurehealthcareapis.us"
     }
     azure_healthcare_dicom = {
-      zone_name = "privatelink.dicom.azurehealthcareapis.com"
+      zone_name = "privatelink.dicom.azurehealthcareapis.us"
     }
     azure_iot_hub = {
-      zone_name = "privatelink.azure-devices.net"
+      zone_name = "privatelink.azure-devices.us"
     }
     azure_iot_hub_provisioning = {
-      zone_name = "privatelink.azure-devices-provisioning.net"
+      zone_name = "privatelink.azure-devices-provisioning.us"
     }
     azure_iot_hub_update = {
-      zone_name = "privatelink.api.adu.microsoft.com"
+      zone_name = "privatelink.api.adu.microsoft.com"                              #check this
     }
     azure_iot_central = {
-      zone_name = "privatelink.azureiotcentral.com"
+      zone_name = "privatelink.azureiotcentral.com"                              #check this
     }
     azure_digital_twins = {
-      zone_name = "privatelink.digitaltwins.azure.net"
+      zone_name = "privatelink.digitaltwins.azure.net"                              #check this
     }
-    azure_media_services_delivery = {
-      zone_name = "privatelink.media.azure.net"
+    azure_media_services_delivery = {                             
+      zone_name = "privatelink.media.azure.net"                              #check this
     }
     azure_automation = {
-      zone_name = "privatelink.azure-automation.net"
+      zone_name = "privatelink.azure-automation.us"
     }
     azure_backup = {
-      zone_name = "privatelink.{regionCode}.backup.windowsazure.com"
+      zone_name = "privatelink.{regionCode}.backup.windowsazure.us"
     }
     azure_site_recovery = {
-      zone_name = "privatelink.siterecovery.windowsazure.com"
+      zone_name = "privatelink.siterecovery.windowsazure.us"
     }
     azure_monitor = {
-      zone_name = "privatelink.monitor.azure.com"
+      zone_name = "privatelink.monitor.azure.us"
     }
     azure_log_analytics = {
-      zone_name = "privatelink.oms.opinsights.azure.com"
+      zone_name = "privatelink.oms.opinsights.azure.us"
     }
     azure_log_analytics_data = {
-      zone_name = "privatelink.ods.opinsights.azure.com"
+      zone_name = "privatelink.ods.opinsights.azure.us"
     }
     azure_monitor_agent = {
-      zone_name = "privatelink.agentsvc.azure-automation.net"
+      zone_name = "privatelink.agentsvc.azure-automation.us"
     }
     azure_purview_account = {
-      zone_name = "privatelink.purview.azure.com"
+      zone_name = "privatelink.purview.azure.us"
     }
     azure_purview_studio = {
-      zone_name = "privatelink.purviewstudio.azure.com"
+      zone_name = "privatelink.purviewstudio.azure.us"
     }
     azure_migration_service = {
-      zone_name = "privatelink.prod.migration.windowsazure.com"
+      zone_name = "privatelink.prod.migration.windowsazure.com"                              #check this
     }
     azure_grafana = {
-      zone_name = "privatelink.grafana.azure.com"
+      zone_name = "privatelink.grafana.azure.com"                              #check this
     }
     azure_key_vault = {
-      zone_name = "privatelink.vaultcore.azure.net"
+      zone_name = "privatelink.vaultcore.usgovcloudapi.net"
     }
     azure_managed_hsm = {
-      zone_name = "privatelink.managedhsm.azure.net"
+      zone_name = "privatelink.managedhsm.azure.net"                              #check this
     }
     azure_app_configuration = {
-      zone_name = "privatelink.azconfig.io"
+      zone_name = "privatelink.azconfig.azure.us"
     }
     azure_attestation = {
-      zone_name = "privatelink.attest.azure.net"
+      zone_name = "privatelink.attest.azure.net"                              #check this
     }
     azure_search = {
-      zone_name = "privatelink.search.windows.net"
+      zone_name = "privatelink.search.azure.us"
     }
     azure_app_service = {
-      zone_name = "privatelink.azurewebsites.net"
+      zone_name = "privatelink.azurewebsites.us"
     }
     azure_signalr_service = {
-      zone_name = "privatelink.service.signalr.net"
+      zone_name = "privatelink.service.signalr.net"                              #check this
     }
     azure_static_web_apps = {
-      zone_name = "privatelink.azurestaticapps.net"
+      zone_name = "privatelink.azurestaticapps.net"                              #check this
     }
     azure_synapse_sql = {
-      zone_name = "privatelink.sql.azuresynapse.net"
+      zone_name = "privatelink.sql.azuresynapse.usgovcloudapi.net"
     }
     azure_synapse_dev = {
-      zone_name = "privatelink.dev.azuresynapse.net"
+      zone_name = "privatelink.dev.azuresynapse.usgovcloudapi.net"
     }
     azure_web_pubsub = {
-      zone_name = "privatelink.webpubsub.azure.com"
+      zone_name = "privatelink.webpubsub.azure.com"                              #check this
     }
   }
   description = <<DESCRIPTION
