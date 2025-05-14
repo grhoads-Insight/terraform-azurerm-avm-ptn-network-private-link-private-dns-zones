@@ -43,9 +43,9 @@ variable "private_link_private_dns_zones" {
     zone_name = optional(string, null)
   }))
   default = {
-    azure_container_apps = {
-      zone_name = "privatelink.{regionName}.azurecontainerapps.io"                                   #check this
-    }
+    # azure_container_apps = {
+    #   zone_name = "privatelink.{regionName}.azurecontainerapps.io"                                   #check this
+    # }
     azure_ml = {
       zone_name = "privatelink.api.ml.azure.us"
     }
@@ -55,15 +55,15 @@ variable "private_link_private_dns_zones" {
     azure_ai_cog_svcs = {
       zone_name = "privatelink.cognitiveservices.azure.us"
     }
-    azure_ai_oai = {
-      zone_name = "privatelink.openai.azure.com"                                                       #check this
-    }
-    azure_bot_svc_bot = {
-      zone_name = "privatelink.directline.botframework.com"                                            #check this
-    }
-    azure_bot_svc_token = {
-      zone_name = "privatelink.token.botframework.com"                                                  #check this
-    }
+    # azure_ai_oai = {
+    #   zone_name = "privatelink.openai.azure.com"                                                       #check this
+    # }
+    # azure_bot_svc_bot = {
+    #   zone_name = "privatelink.directline.botframework.com"                                            #check this
+    # }
+    # azure_bot_svc_token = {
+    #   zone_name = "privatelink.token.botframework.com"                                                  #check this
+    # }
     azure_service_hub = {
       zone_name = "privatelink.servicebus.usgovcloudapi.net"
     }
@@ -76,18 +76,18 @@ variable "private_link_private_dns_zones" {
     azure_hdinsight = {
       zone_name = "privatelink.azurehdinsight.us"
     }
-    azure_data_explorer = {
-      zone_name = "privatelink.{regionName}.kusto.windows.net"                                 #check this
-    }
-    azure_storage_blob = {
-      zone_name = "privatelink.blob.core.windows.net"                           #check this
-    }
-    azure_storage_queue = {
-      zone_name = "privatelink.queue.core.windows.net"                           #check this
-    }
-    azure_storage_table = {
-      zone_name = "privatelink.table.core.windows.net"                           #check this
-    }
+    # azure_data_explorer = {
+    #   zone_name = "privatelink.{regionName}.kusto.windows.net"                                 #check this
+    # }
+    # azure_storage_blob = {
+    #   zone_name = "privatelink.blob.core.windows.net"                           #check this
+    # }
+    # azure_storage_queue = {
+    #   zone_name = "privatelink.queue.core.windows.net"                           #check this
+    # }
+    # azure_storage_table = {
+    #   zone_name = "privatelink.table.core.windows.net"                           #check this
+    # }
     azure_storage_file = {
       zone_name = "privatelink.file.core.usgovcloudapi.net"
     }
@@ -97,18 +97,18 @@ variable "private_link_private_dns_zones" {
     azure_data_lake_gen2 = {
       zone_name = "privatelink.dfs.core.usgovcloudapi.net"
     }
-    azure_file_sync = {
-      zone_name = "privatelink.afs.azure.net"                           #check this
-    }
-    azure_power_bi_tenant_analysis = {
-      zone_name = "privatelink.analysis.windows.net"                           #check this
-    }
-    azure_power_bi_dedicated = {
-      zone_name = "privatelink.pbidedicated.windows.net"                           #check this
-    }
-    azure_power_bi_power_query = {
-      zone_name = "privatelink.tip1.powerquery.microsoft.com"                           #check this
-    }
+    # azure_file_sync = {
+    #   zone_name = "privatelink.afs.azure.net"                           #check this
+    # }
+    # azure_power_bi_tenant_analysis = {
+    #   zone_name = "privatelink.analysis.windows.net"                           #check this
+    # }
+    # azure_power_bi_dedicated = {
+    #   zone_name = "privatelink.pbidedicated.windows.net"                           #check this
+    # }
+    # azure_power_bi_power_query = {
+    #   zone_name = "privatelink.tip1.powerquery.microsoft.com"                           #check this
+    # }
     azure_databricks_ui_api = {
       zone_name = "privatelink.databricks.azure.us"
     }
@@ -121,9 +121,9 @@ variable "private_link_private_dns_zones" {
     azure_avd_feed_mgmt = {
       zone_name = "privatelink.wvd.azure.us"
     }
-    azure_aks_mgmt = {
-      zone_name = "privatelink.{regionName}.azmk8s.io"                          #check this
-    }
+    # azure_aks_mgmt = {
+    #   zone_name = "privatelink.{regionName}.azmk8s.io"                          #check this
+    # }
     azure_acr_registry = {
       zone_name = "privatelink.azurecr.us"
     }
@@ -148,12 +148,12 @@ variable "private_link_private_dns_zones" {
     azure_cosmos_db_table = {
       zone_name = "privatelink.table.cosmos.azure.us"
     }
-    azure_cosmos_db_analytical = {
-      zone_name = "privatelink.analytics.cosmos.azure.com"                          #check this
-    }
-    azure_cosmos_db_postgres = {
-      zone_name = "privatelink.postgres.cosmos.azure.com"                          #check this
-    }
+    # azure_cosmos_db_analytical = {
+    #   zone_name = "privatelink.analytics.cosmos.azure.com"                          #check this
+    # }
+    # azure_cosmos_db_postgres = {
+    #   zone_name = "privatelink.postgres.cosmos.azure.com"                          #check this
+    # }
     azure_maria_db_server = {
       zone_name = "privatelink.mariadb.database.usgovcloudapi.net"
     }
@@ -166,24 +166,24 @@ variable "private_link_private_dns_zones" {
     azure_redis_cache = {
       zone_name = "privatelink.redis.cache.usgovcloudapi.net"
     }
-    azure_redis_enterprise = {
-      zone_name = "privatelink.redisenterprise.cache.azure.net"                           #check this
-    }
-    azure_arc_hybrid_compute = {
-      zone_name = "privatelink.his.arc.azure.com"                              #check this
-    }
-    azure_arc_guest_configuration = {
-      zone_name = "privatelink.guestconfiguration.azure.com"                              #check this
-    }
-    azure_arc_kubernetes = {
-      zone_name = "privatelink.dp.kubernetesconfiguration.azure.com"                              #check this
-    }
+    # azure_redis_enterprise = {
+    #   zone_name = "privatelink.redisenterprise.cache.azure.net"                           #check this
+    # }
+    # azure_arc_hybrid_compute = {
+    #   zone_name = "privatelink.his.arc.azure.com"                              #check this
+    # }
+    # azure_arc_guest_configuration = {
+    #   zone_name = "privatelink.guestconfiguration.azure.com"                              #check this
+    # }
+    # azure_arc_kubernetes = {
+    #   zone_name = "privatelink.dp.kubernetesconfiguration.azure.com"                              #check this
+    # }
     azure_event_grid = {
       zone_name = "privatelink.eventgrid.azure.us"
     }
-    azure_api_management = {
-      zone_name = "privatelink.azure-api.net"                              #check this
-    }
+    # azure_api_management = {
+    #   zone_name = "privatelink.azure-api.net"                              #check this
+    # }
     azure_healthcare_workspaces = {
       zone_name = "privatelink.workspace.azurehealthcareapis.us"
     }
@@ -199,18 +199,18 @@ variable "private_link_private_dns_zones" {
     azure_iot_hub_provisioning = {
       zone_name = "privatelink.azure-devices-provisioning.us"
     }
-    azure_iot_hub_update = {
-      zone_name = "privatelink.api.adu.microsoft.com"                              #check this
-    }
-    azure_iot_central = {
-      zone_name = "privatelink.azureiotcentral.com"                              #check this
-    }
-    azure_digital_twins = {
-      zone_name = "privatelink.digitaltwins.azure.net"                              #check this
-    }
-    azure_media_services_delivery = {                             
-      zone_name = "privatelink.media.azure.net"                              #check this
-    }
+    # azure_iot_hub_update = {
+    #   zone_name = "privatelink.api.adu.microsoft.com"                              #check this
+    # }
+    # azure_iot_central = {
+    #   zone_name = "privatelink.azureiotcentral.com"                              #check this
+    # }
+    # azure_digital_twins = {
+    #   zone_name = "privatelink.digitaltwins.azure.net"                              #check this
+    # }
+    # azure_media_services_delivery = {                             
+    #   zone_name = "privatelink.media.azure.net"                              #check this
+    # }
     azure_automation = {
       zone_name = "privatelink.azure-automation.us"
     }
@@ -238,45 +238,45 @@ variable "private_link_private_dns_zones" {
     azure_purview_studio = {
       zone_name = "privatelink.purviewstudio.azure.us"
     }
-    azure_migration_service = {
-      zone_name = "privatelink.prod.migration.windowsazure.com"                              #check this
-    }
-    azure_grafana = {
-      zone_name = "privatelink.grafana.azure.com"                              #check this
-    }
+    # azure_migration_service = {
+    #   zone_name = "privatelink.prod.migration.windowsazure.com"                              #check this
+    # }
+    # azure_grafana = {
+    #   zone_name = "privatelink.grafana.azure.com"                              #check this
+    # }
     azure_key_vault = {
       zone_name = "privatelink.vaultcore.usgovcloudapi.net"
     }
-    azure_managed_hsm = {
-      zone_name = "privatelink.managedhsm.azure.net"                              #check this
-    }
+    # azure_managed_hsm = {
+    #   zone_name = "privatelink.managedhsm.azure.net"                              #check this
+    # }
     azure_app_configuration = {
       zone_name = "privatelink.azconfig.azure.us"
     }
-    azure_attestation = {
-      zone_name = "privatelink.attest.azure.net"                              #check this
-    }
+    # azure_attestation = {
+    #   zone_name = "privatelink.attest.azure.net"                              #check this
+    # }
     azure_search = {
       zone_name = "privatelink.search.azure.us"
     }
     azure_app_service = {
       zone_name = "privatelink.azurewebsites.us"
     }
-    azure_signalr_service = {
-      zone_name = "privatelink.service.signalr.net"                              #check this
-    }
-    azure_static_web_apps = {
-      zone_name = "privatelink.azurestaticapps.net"                              #check this
-    }
+    # azure_signalr_service = {
+    #   zone_name = "privatelink.service.signalr.net"                              #check this
+    # }
+    # azure_static_web_apps = {
+    #   zone_name = "privatelink.azurestaticapps.net"                              #check this
+    # }
     azure_synapse_sql = {
       zone_name = "privatelink.sql.azuresynapse.usgovcloudapi.net"
     }
     azure_synapse_dev = {
       zone_name = "privatelink.dev.azuresynapse.usgovcloudapi.net"
     }
-    azure_web_pubsub = {
-      zone_name = "privatelink.webpubsub.azure.com"                              #check this
-    }
+    # azure_web_pubsub = {
+    #   zone_name = "privatelink.webpubsub.azure.com"                              #check this
+    # }
   }
   description = <<DESCRIPTION
 A set of Private Link Private DNS Zones to create. Each element must be a valid DNS zone name.
